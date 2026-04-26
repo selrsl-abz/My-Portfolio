@@ -120,7 +120,7 @@ slideshowCards.forEach((card) => {
     const current = images[index];
     preview.src = current;
     card.dataset.src = current;
-  }, 2200);
+  }, 1200);
 });
 
 cards.forEach((card) => {
