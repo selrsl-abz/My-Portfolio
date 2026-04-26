@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Creative portfolio for design works and motion graphics." />
+  <title>Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#home" class="brand">ABBY'S PORTFOLIO</a>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">Menu</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#works">Works</a>
+      <a href="#motion">Motion</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Design Works and Motion Graphics</h1>
+      <p class="hero-copy">
+        A selected collection of graphic projects.
+      </p>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-outline">Work With Me</a>
+      </div>
+    </section>
+
+    <section class="controls reveal" aria-label="Portfolio filter controls">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="work">Works</button>
+      <button class="chip" data-filter="motion">Motion</button>
+    </section>
+
+    <section id="works" class="portfolio-section reveal">
+      <div class="section-head">
+        <h2>Design Works</h2>
+        <p>Personal Projects</p>
+      </div>
+      <div class="portfolio-grid" id="worksGrid">
+        <article class="card" data-category="work" data-type="image" data-src="assets/images/works/a4b6b0ad-9243-493f-99b7-2d4288298e2f.png">
+          <div class="thumb thumb-work thumb-image">
+            <img src="assets/images/works/a4b6b0ad-9243-493f-99b7-2d4288298e2f.png" alt="Work image preview 1" loading="lazy" />
+          </div>
+        </article>
+        <article class="card" data-category="work" data-type="image" data-src="assets/images/works/b36f104d-ec25-4340-abe4-6af69d83264d.png">
+          <div class="thumb thumb-work thumb-image">
+            <img src="assets/images/works/b36f104d-ec25-4340-abe4-6af69d83264d.png" alt="Work image preview 2" loading="lazy" />
+          </div>
+        </article>
+        <article
+          class="card"
+          data-category="work"
+          data-type="image"
+          data-src="assets/images/works/makoto/1.png"
+          data-images="assets/images/works/makoto/1.png|assets/images/works/makoto/2.png|assets/images/works/makoto/3.png"
+        >
+          <div class="thumb thumb-work thumb-image">
+            <img class="thumb-slide" src="assets/images/works/makoto/1.png" alt="Makoto project preview" loading="lazy" />
+          </div>
+        </article>
+        <article
+          class="card"
+          data-category="work"
+          data-type="image"
+          data-src="assets/images/works/tim/1.png"
+          data-images="assets/images/works/tim/1.png|assets/images/works/tim/2.png|assets/images/works/tim/3.png"
+        >
+          <div class="thumb thumb-work thumb-image">
+            <img class="thumb-slide" src="assets/images/works/tim/1.png" alt="Tim project preview" loading="lazy" />
+          </div>
+        </article>
+      </div>
+      <a class="expand-btn" href="works.html">View All Works</a>
+    </section>
+
+    <section id="motion" class="portfolio-section reveal">
+      <div class="section-head">
+        <h2>Motion Graphics</h2>
+        <p>Visual edits, loops, and short animation studies.</p>
+      </div>
+      <div class="portfolio-grid" id="motionGrid">
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Moonbyul.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Moonbyul preview">
+              <source src="assets/videos/motion/Moonbyul.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Commission Edit</h3>
+            <p>Performance-focused motion piece combining dynamic pacing, confident transition design, and clean visual flow.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Miguel%20Edit.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Title sequence preview">
+              <source src="assets/videos/motion/Miguel%20Edit.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Spiderverse Commission Edit</h3>
+            <p>Commissioned short-form edit featuring precise beat sync, clean type animation, and punchy pacing.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Grunge%20Type%20Edit.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Grunge type preview">
+              <source src="assets/videos/motion/Grunge%20Type%20Edit.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Grunge Type Edit</h3>
+            <p>Typography-forward piece using grunge textures, contrast-driven styling, and aggressive cut timing.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Animation%20Edit.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Animation edit preview">
+              <source src="assets/videos/motion/Animation%20Edit.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Animation Edit</h3>
+            <p>Motion sequence built around layered movement, controlled rhythm, and smooth shot-to-shot continuity.</p>
+          </div>
+        </article>
+        <article class="card extra-card" data-category="motion" data-type="video" data-src="assets/videos/motion/transition%20edits.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Loop study preview">
+              <source src="assets/videos/motion/transition%20edits.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Transition Edits</h3>
+            <p>Transition study emphasizing match cuts, directional flow, and high-energy scene changes.</p>
+          </div>
+        </article>
+        <article class="card extra-card" data-category="motion" data-type="video" data-src="assets/videos/motion/For%20Nona.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="For Nona preview">
+              <source src="assets/videos/motion/For%20Nona.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Link Click Commission</h3>
+            <p>Tribute-style visual with softer timing, cinematic tone, and emotionally led pacing.</p>
+          </div>
+        </article>
+      </div>
+      <a class="expand-btn" href="motion.html">View All Motion</a>
+    </section>
+
+    <section id="about" class="about reveal">
+      <h2>About Me</h2>
+      <p>
+        I am a multimedia designer passionate about expressive typography, cinematic edits, 
+        and creating visuals that stand out. I enjoy exploring different styles and techniques to 
+        produce work that feels unique, immersive, and visually impactful.
+      </p>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <h2>Contact</h2>
+      <div class="contact-icons">
+        <a class="contact-icon" href="mailto:rosales.angelabegail.balios@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="contact-icon" href="https://instagram.com/aecrith" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+  <footer class="site-footer">
+    <p><span id="year"></span> All rights reserved.</p>
+  </footer>
+
+  <dialog id="previewModal" class="preview-modal">
+    <button id="closePreview" class="close-preview" aria-label="Close preview">x</button>
+    <div id="previewContent" class="preview-content"></div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

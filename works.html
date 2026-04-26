@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="All design works and campaigns." />
+  <title>All Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html#home" class="brand">ABBY'S PORTFOLIO</a>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="motion.html">Motion</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-section reveal">
+      <div class="section-head">
+        <h2>All Design Works</h2>
+        <p>Personal Projects</p>
+      </div>
+      <div class="portfolio-grid">
+        <article
+          class="card"
+          data-category="work"
+          data-type="image"
+          data-src="assets/images/works/makoto/1.png"
+          data-images="assets/images/works/makoto/1.png|assets/images/works/makoto/2.png|assets/images/works/makoto/3.png"
+        >
+          <div class="thumb thumb-work thumb-image">
+            <img class="thumb-slide" src="assets/images/works/makoto/1.png" alt="Makoto project preview" loading="lazy" />
+          </div>
+        </article>
+        <article
+          class="card"
+          data-category="work"
+          data-type="image"
+          data-src="assets/images/works/tim/1.png"
+          data-images="assets/images/works/tim/1.png|assets/images/works/tim/2.png|assets/images/works/tim/3.png"
+        >
+          <div class="thumb thumb-work thumb-image">
+            <img class="thumb-slide" src="assets/images/works/tim/1.png" alt="Tim project preview" loading="lazy" />
+          </div>
+        </article>
+        <article class="card" data-category="work" data-type="image" data-src="assets/images/works/5eddf38c-7f5f-4553-9a9c-1d58603652e3.png">
+          <div class="thumb thumb-work thumb-image">
+            <img src="assets/images/works/5eddf38c-7f5f-4553-9a9c-1d58603652e3.png" alt="Work image preview 1" loading="lazy" />
+          </div>
+        </article>
+        <article class="card" data-category="work" data-type="image" data-src="assets/images/works/a4b6b0ad-9243-493f-99b7-2d4288298e2f.png">
+          <div class="thumb thumb-work thumb-image">
+            <img src="assets/images/works/a4b6b0ad-9243-493f-99b7-2d4288298e2f.png" alt="Work image preview 2" loading="lazy" />
+          </div>
+        </article>
+        <article class="card" data-category="work" data-type="image" data-src="assets/images/works/b36f104d-ec25-4340-abe4-6af69d83264d.png">
+          <div class="thumb thumb-work thumb-image">
+            <img src="assets/images/works/b36f104d-ec25-4340-abe4-6af69d83264d.png" alt="Work image preview 3" loading="lazy" />
+          </div>
+        </article>
+        <article class="card" data-category="work" data-type="image" data-src="assets/images/works/vein%20for%20tsa%20%280-00-07-04%29%20%281%29_upscayl_4x_digital-art-4x.png">
+          <div class="thumb thumb-work thumb-image">
+            <img src="assets/images/works/vein%20for%20tsa%20%280-00-07-04%29%20%281%29_upscayl_4x_digital-art-4x.png" alt="Work image preview 4" loading="lazy" />
+          </div>
+        </article>
+      </div>
+      <a class="expand-btn" href="index.html#works">Back To Home Portfolio</a>
+    </section>
+  </main>
+
+  <dialog id="previewModal" class="preview-modal">
+    <button id="closePreview" class="close-preview" aria-label="Close preview">x</button>
+    <div id="previewContent" class="preview-content"></div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

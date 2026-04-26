@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="All motion graphics projects and loops." />
+  <title>All Motion Graphics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html#home" class="brand">ABBY'S PORTFOLIO</a>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="works.html">Works</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-section reveal">
+      <div class="section-head">
+        <h2>All Motion Graphics</h2>
+        <p>Visual edits, loops, and short animation studies.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Moonbyul.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Moonbyul preview">
+              <source src="assets/videos/motion/Moonbyul.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Commission Edit</h3>
+            <p>Motion piece combining dynamic pacing, confident transition design, and clean visual flow.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Miguel%20Edit.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Commission work preview">
+              <source src="assets/videos/motion/Miguel%20Edit.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Spiderverse Commission Edit</h3>
+            <p>Commissioned short-form edit featuring precise beat sync, clean type animation, and punchy pacing.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Grunge%20Type%20Edit.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Grunge type preview">
+              <source src="assets/videos/motion/Grunge%20Type%20Edit.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Grunge Type Edit</h3>
+            <p>Typography-forward piece using grunge textures, contrast-driven styling, and aggressive cut timing.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/Animation%20Edit.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Animation edit preview">
+              <source src="assets/videos/motion/Animation%20Edit.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Animation Edit</h3>
+            <p>Motion sequence built around layered movement, controlled rhythm, and smooth shot-to-shot continuity.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/For%20Nona.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="For Nona preview">
+              <source src="assets/videos/motion/For%20Nona.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Link Click Commission</h3>
+            <p>Tribute-style visual with softer timing, cinematic tone, and emotionally led pacing.</p>
+          </div>
+        </article>
+        <article class="card" data-category="motion" data-type="video" data-src="assets/videos/motion/transition%20edits.mp4">
+          <div class="thumb thumb-motion thumb-video">
+            <video autoplay muted loop preload="metadata" aria-label="Loop study preview">
+              <source src="assets/videos/motion/transition%20edits.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <h3>Transition Edits</h3>
+            <p>Transition study emphasizing match cuts, directional flow, and high-energy scene changes.</p>
+          </div>
+        </article>
+      </div>
+      <a class="expand-btn" href="index.html#motion">Back To Home Portfolio</a>
+    </section>
+  </main>
+
+  <dialog id="previewModal" class="preview-modal">
+    <button id="closePreview" class="close-preview" aria-label="Close preview">x</button>
+    <div id="previewContent" class="preview-content"></div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
